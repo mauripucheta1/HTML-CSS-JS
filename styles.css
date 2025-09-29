@@ -1,0 +1,144 @@
+body {
+    background-color: blanchedalmond;   
+    margin: 0%;
+    border: none;
+}
+
+/* Propiedad FONT-SIZE: Cambia el tamaño de la fuente, donde encontramos diferentes unidades:
+
+    1) px: Unidad más usada y expresa "píxeles".
+    2) pt: Unidad que representa "puntos".
+    3) in: Unidad que representa pulgadas.
+    4) cm: Unidad que representa centímetros.
+    5) mm: Unidad que representa milímetros.
+    6) em: Unidad relativa al tamaño de letra del elemento.
+    7) rem: Unidad relativa al tamaño de letra del documento.
+    8) %: Unidad relativa al tamaño del contenedor del elemento.
+
+    Propiedad COLOR: Sirve para aplicar, como su palabra lo dice, color a un texto, encontramos 8 formas posibles:
+    1) RGB: El famoso red, green y blue.
+    2) RGBA: Lo mismo que RGB pero, se le agrega la propiedad alpha para definir la opacidad del color.
+    3) HEX: Una combinación numérica o alfanumérica de 6 dígitos.
+    4) HSL: Define los colores en base a matiz, saturación y luminosidad.
+    5) HSLA: Lo mismo que HSL pero, se le agrega la propiedad de alpha para definir la opacidad del color.
+    6) Nombres de colores: Existen 140 nombres de color predefinidos en CSS.
+    7) transparent: Indica la total transparencia.
+    8) currentColor: Usa el valor del color del elemento actual (hereda el color del superior)
+
+*/
+
+/* Selector por nombre: */
+h1 {
+    color: rgb(160, 135, 88);
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Selector por clase */
+.textSection {
+    background-color: rgb(99, 86, 61);
+    color: white;
+}
+
+.textSection > article {
+    background-color: rgb(202, 176, 127);
+}
+
+.headings {
+    color: rgb(221, 146, 8);
+}
+
+/* Selector por ID */
+#firstP {
+    font: bold;
+    font-size: 35px;
+}
+
+/* Selectores específicos: Cada selector tiene un significado:
+
+    1) ~=: Referencia al elemento con un atributo "name" que incluya la palabra, en este caso, "mi".
+    2) ^=: Referencia al elemento con un atributo "name" cuyo valor, en este caso, comienze en "mi".
+    3) $=: Referencia al elemento con un atributo "name" cuyo valor, en este caso, termine en "mi".
+    4) *=: Referencia el elemento con atributo "name" cuyo valor, en este caso, contenga "mi" en cualquier posición.
+
+*/
+
+p[name~="mi"] {
+    font-size: 20px;
+}
+p[name^="mi"] {
+    font-size: 20px;
+}
+p[name$="mi"] {
+    font-size: 20px;
+}
+p[name*="mi"] {
+    font-size: 20px;
+}
+
+/* Selector por pseudoclase: Permiten referenciar a elementos HTML por medio de sus características, por ejemplo:
+
+    1) :nth-chid(valor): Se selecciona al elemento de una lista de elementos (hijos) a través de su posición específicada en paréntesis.
+    2) :first-child: Se selecciona al primer elemento hijo.
+    3) :last-child: Se selecciona el último elemento hijo.
+    4) :only-child: Se selecciona al único elemento hijo.
+
+    EXTRA 0.1: Para el :nth-child() tenemos dos variantes:
+    A) odd: Selecciona todos los hijos con índice impar.
+    B) even: Selecciona todos los hijos con índice par.
+
+    EXTRA 0.2: Podemos tener el elemento :not(elemento) que aplica estilos a todos los elementos diferente al posicionado en el paréntesis.
+
+*/
+
+.textEmbebed > p:nth-child(3) {
+    color: black;
+}
+
+.textEmbebed > p:first-child {
+    color: burlywood;
+}
+
+.textEmbebed > p:last-child {
+    color: chartreuse;
+}
+
+/* Propiedades:
+
+    A) Fuente:
+        1) font-family: Declara la fuente para mostrar el texto.
+        2) font-weight: Declara si el texto se mostrará en negrita o no.
+        3) font-style: Determina el estilo de la letra.
+        4) font: Nos permite determinar varios valores al mismo tiempo, ejemplo: bold 25px Arial.
+
+    B) Alineamientos:
+        1) text-align: Esta propiedad alinea el texto dentro de un elemento, valores: left, right, center y justify.
+        2) text-align-last: Esta propiedad alinea la última línea de un parrafo, valores: left, right, center y justify.
+        3) text-indent: Determina la sangría del texto.
+        4) letter-spacing: Define el espacio entre letras.
+        5) word-spacing: Define el espacio entre palabras.
+        6) line-height: Define el espacio vertical.
+        7) vertical-align: Alinea elementos verticalmente, valores: baseline, sub, super, text-top, text-bottom, middle, top y bottom.
+        8) text-decoration: underline, overline, line-through y none.
+
+    C) Fuentes personalizadas: Podemos cargar una fuente personalizada en nuestro documento y luego utilizarla en la propiedad font.
+    
+        @font-face {
+            font-family: "MiNuevaLetra";
+            src: url("font.ttf");
+        }
+
+    D) Tamaños: Con CSS podemos definir un tamaño personalizado:
+        1) width: Especifica el ancho de un elemento.
+        2) height: Especifica el alto de un elemento.
+        3) overflow: Esta propiedad especifica cómo se mostrará el contenido que desborda el elemento, valores: visible, hidden, scroll y auto.
+        4) overflow-x: Lo mismo pero para el eje horizontal X.
+        5) overflow-y: Lo mismo pero para el eje vertical Y.
+        6) overflow-wrap: Indica si una palabra debería ser dividida en un punto arbitrario cuando no hay suficiente espacio, valores: normal y break-word.
+*/  
+
+.textSection {
+    text-align: center;
+}
