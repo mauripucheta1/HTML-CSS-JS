@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este recurso contiene información sobre HTML, CSS y JavaScript.">
+    <meta name="author" content="Mauricio Nahuel Pucheta">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Practicando HTML</title>
+</head>
+<body>
+
+    <!-- Contenido con estructuras + IDs + Clases -->
+
+    <!-- Header-->
+    <header id="mainHeader">
+
+        <!-- Navbar -->
+        <nav>
+
+            <!-- Hipervínculos (enlaces) con diferentes targets / referencias -->
+            <a href="https://google.com" target="_self">Google</a>
+            <a href="https://youtube.com" target="_parent">Youtube</a>
+            <a href="https://wikipedia.org" target="_top">Wikipedia</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+
+            <!-- Hipervínculo con atributo download -->
+            <a href="resources/cv.pdf" download="cv.pdf">Descargar CV</a>
+
+            <!-- Hipervínculo con atributo download + ping -->
+            <a href="resources/cv.pdf" download="cv.pdf" ping="responsable.php">Descargar otro</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Principal -->
+    <main class="mainContent">
+
+        <!-- Headings -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+    </main>
+
+    <!-- Sección -->
+    <section class="textSection">
+
+        <!-- Párrafos -->
+        <p>Esto es un párrafo</p>
+        
+        <!-- Párrafo + Span -->
+        <p>Esto es un párrafo + <span>un span</span></p>
+
+        <!-- Párrafo + salto de línea + recomendación de salto de línea (wbr)-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus aperiam qui at hic. Optio labore aperiam temporibus, <br>inventore impedit similique nostrum odio in <wbr> excepturi, corrupti harum veritatis assumenda reiciendis!</p>
+
+        <!-- Cursiva -->
+        <i>Hola desde cursiva</i>
+
+        <!-- Subrayado -->
+        <p>Texto subrayado</p>
+
+        <!-- Negrita -->
+        <b>Texto en negrita</b>
+
+        <!-- Texto con énfasis -->
+        <em>Texto con énfasis</em>
+
+        <!-- Texto "fuerete" -->
+        <strong>Texto fuerte, con peso</strong>
+        
+        <!-- Artículo -->
+        <article>
+            <p>Aquí podría ir redactando un artículo</p>
+        </article>
+
+        <!-- Texto preformateado (con un formato a respetar por el navegador) -->
+        <pre>
+
+            <!-- Le indicamos al navegador que es texto preformateado con sintaxis de código (JS) para que lo respete-->
+            <code>
+                const meses = ['Enero', 'Febrero', 'Marzo'];
+                meses.forEach(mes => console.log(`Mes: ${mes}`));
+            </code>
+
+        </pre>
+
+        <!-- Texto con términos relevantes (mark) + cite (citas) + small (letra pequeña) + address (dirección) -->
+        <p>Lorem ipsum dolor sit amet, <mark>consectetur</mark> adipisicing elit. Sapiente minus aliquam nesciunt nisi <cite>"blanditiis laborum est error maxime expedita"</cite>, in natus possimus, iste optio suscipit, <small>deleniti praesentium</small>. Sint, ratione fuga?, <address>Córdoba - Jesús María</address><time>2025-09-29</time></p>
+
+        <!-- Párrafo + span + traducción -->
+        <p>Anoche ví la pelicula<span translate="no">Two Roads</span></p>
+        <p>Anoche ví la pelicula<span translate="yes">Two Roads</span></p>
+
+        <!-- Párrafo + span + contenteditable -->
+        <p>Mi película favorita es: <span contenteditable="yes"></span></p>
+
+    </section>
+
+    <!-- Barra lateral -->
+    <aside id="leftAside">
+
+
+    </aside>
+
+    <!-- Sección (!= section) -->
+    <div class="imageContainer">
+
+        <!-- Imagen + alt + width -->
+        <img src="images/forum.png" alt="Póster Adidas Forum" width="150"/>
+
+        <!-- Foto -->
+        <picture>
+            <img src="images/campus.png" alt="Póster Adidas Campus" width="150" />
+        </picture>
+
+        <!-- Figura -->
+        <figure>
+            <img src="images/samba.png" alt="Póster Adidas Samba" width="150" />
+            <figcaption>Zapatillas Adidas Campus 00</figcaption>
+        </figure>
+
+        <!-- Aclaraciones -->
+        <!-- Podemos encontrar atributos tales como 
+         
+            1) width: Indican el ancho de la imagen.
+            2) height: Indican el alto de la imagen.
+            3) alt: Indican la descripción de la foto en caso que no se cargue.
+            4) srcset: Indican una colección de imágenes.
+            5) crossorigin: Indican el origen (relacionado a política CORS).
+            6) sizes: Indican los tamaños de la imagen (relacionado a las mediaqueries).
+
+        -->
+        
+    </div>
+
+    <!-- Sección Listados -->
+    <section>
+        
+        <!-- Lista desordenada -->
+        <ul>
+
+            <!-- Ítems -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+
+        </ul>
+
+
+        <!-- Lista ordenada (con letras) -->
+        <ol type="A">
+            
+            <!-- Ítems -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+
+        </ol>
+
+        <!-- Lista ordenada (con letras y en reversa) -->
+        <ol type="A" reversed>
+            
+            <!-- Ítems -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+
+        </ol>
+
+        <!-- Lista ordenada (con números) -->
+        <ol type="1">
+            
+            <!-- Ítems -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+
+        </ol>
+
+        <!-- Lista ordenada (con números y en reversa) -->
+        <ol type="1" reversed>
+            
+            <!-- Ítems -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+
+        </ol>
+
+        <!-- Lista de términos y descripciones -->
+        <dl>
+
+            <!-- Término -->
+            <dt>Término 1</dt>
+
+            <!-- Descripción -->
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque dignissimos eligendi vitae ipsa similique debitis veniam nisi voluptate, architecto iste cum rerum quasi odit consequuntur totam impedit neque quod.</dd>
+
+            <!-- Término -->
+            <dt>Término 2</dt>
+
+            <!-- Descripción -->
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque dignissimos eligendi vitae ipsa similique debitis veniam nisi voluptate, architecto iste cum rerum quasi odit consequuntur totam impedit neque quod.</dd>
+
+            <!-- Término -->
+            <dt>Término 3</dt>
+
+            <!-- Descripción -->
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque dignissimos eligendi vitae ipsa similique debitis veniam nisi voluptate, architecto iste cum rerum quasi odit consequuntur totam impedit neque quod.</dd>
+
+        </dl>
+
+    </section>
+
+    <!-- Sección extra -->
+    <section>
+
+        <!-- Este elemento representa un bloque de texto que incluye una cita tomada de otro texto en el documento -->
+        <blockquote>Esto es un blockquote</blockquote>
+
+        <!-- Details -->
+        <details>
+
+            <summary>Tecnologías</summary>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JS</p>
+
+        </details>
+
+    </section>
+
+    <!-- Sección de tablas -->
+    <section>
+
+        <!-- Aclaración: <td> es el valor de la celda. -->
+
+        <!-- Tabla -->
+        <table>
+
+            <!-- Cabeza de la tabla -->
+            <thead>
+
+                <!-- Fila de encabezados -->
+                <tr>
+                    <th colspan="2">Tecnología</th>
+                    <th colspan="2">Versión</th>
+                    <th colspan="2">Abreviación</th>
+                </tr>
+
+            </thead>
+
+            <!-- Cuerpo de la tabla -->
+            <tbody>
+
+                <!-- Fila -->
+                <tr>
+                    <td>Hypertext Markup Language</td>
+                    <td>5</td>
+                    <td>HTML5</td>
+                </tr>
+
+                <!-- Fila -->
+                <tr>
+                    <td>Cascade Styles Sheets</td>
+                    <td>3</td>
+                    <td>CSS3</td>
+                </tr>
+
+                <!-- Fila -->
+                <tr>
+                    <td>JavaScript</td>
+                    <td>6</td>
+                    <td>JS (ES6+)</td>
+                </tr>
+
+            </tbody>
+
+            <!-- Pie de la página -->
+            <tfoot>
+
+                <!-- Fila -->
+                <tr>
+                    <td>Mauricio</td>
+                    <td>Nahuel</td>
+                    <td>Pucheta</td>
+                </tr>
+
+            </tfoot>
+
+        </table>
+
+    </section>
+
+    <!-- Sección de formularios -->
+    <section>
+
+        <!-- Formulario -->
+        <form name="formContact" method="post" action="register.php" target="_blank" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+
+            <!-- Aclaraciones:
+
+                1) name: Sirve para indicarle un nombre al formulario.
+                2) method: Indica el método del formulario y puede ser GET o POST.
+                3) action: Indica el archivo del lado del servidor encargado de procesar el formulario.
+                4) target: Indica dónde se reflejara la respuesta del formulario.
+                5) enctype: Indica la encriptación que tendrá el formulario, donde tenemos 3 valores:
+                    A) application/x-www-form-urlencoded: Encripta todos los caracteres.
+                    B) multipart/form-data: Los caracteres no son codificados.
+                    C) text/plain: Los espacios son codificados únicamente.
+                6) accept-charset: Indican que encriptación llevará (UFT-8, ISO-8859-1, etc).
+
+            -->
+
+            <!-- Esta etiqueta se usa para "subdividir" el formulario en partes si fuera extenso -->
+            <fieldset>
+
+                <!-- Aclaraciones: Veremos diferentes tipos de inputs (ingresos) -->
+
+                <!-- Etiqueta + "para (for)" + ID -->
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" />
+
+                <!-- Etiqueta + "para (for)" + ID + max + min -->
+                <label for="age">Edad:</label>
+                <input type="number" id="age" max="100" min="4" />
+
+                <!-- Etiqueta + "para (for)" + ID + max + min + step -->
+                <label for="km">Km:</label>
+                <input type="number" id="km" max="100" min="0" step="2" />
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" />
+
+                <label for="telephone">Teléfono:</label>
+                <input type="tel" id="telephone" />
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" />
+
+                <!-- Insertar fecha -->
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" />
+
+                <!-- Insertar fecha + hora -->
+                <label for="datetime-local">Fecha / Hora:</label>
+                <input type="datetime-local" id="datetime-local" />
+
+                <!-- Insertar el número de semana en un año -->
+                <label for="week">Semana:</label>
+                <input type="week" id="week" />
+
+                <!-- Insertar el mes de un año -->
+                <label for="month">Mes:</label>
+                <input type="month" id="month" />
+
+                <label for="time">Horario:</label>
+                <input type="time" id="time" />
+
+                <!-- Input de sitio web + value (valor por defecto) -->
+                <label for="url">Sitio web:</label>
+                <input type="url" id="url" value="https://mauriciopucheta.com"/>
+
+                <label for="search">Buscar:</label>
+                <input type="search" id="search" />
+
+                <label for="hidden">Input oculto:</label>
+                <input type="hidden" id="hidden" />
+
+                <label for="color">Color:</label>
+                <input type="color" id="color" />
+
+                <!-- Varias opciones (caja) con una opción seleccionada por default -->
+                <label>Opciones:</label>
+                <input type="checkbox" id="red" checked /> Red 
+                <input type="checkbox" id="green" /> Green 
+                <input type="checkbox" id="blue" /> Blue
+
+                <!-- Varias opciones (radio) con una opción seleccionada por default -->
+                <label>Opciones:</label>
+                <input type="radio" id="Adidas" checked /> Adidas 
+                <input type="radio" id="Nike" /> Nike 
+                <input type="radio" id="Puma" /> Puma
+
+                <label for="file">Archivo:</label>
+                <input type="file" id="file" /> 
+
+                <!-- Aclaraciones: Ahora veremos diferentes tipos de elementos de un formulario -->
+                
+                <!-- Área de texto + placeholder -->
+                <textarea name="textAreaContent" placeholder="Ingrese aquí su texto" maxlength="200"></textarea>
+
+                <!-- Selección + opciones -->
+                <select>
+
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JS</option>
+
+                </select>
+
+                <!-- Input teléfonos fijos (ejemplo) -->
+                <label for="phone">Teléfono fijo:</label>
+                <input type="tel" id="phone" list="phoneOptions"/>
+
+
+                <!-- Lista de opciones -->
+                <datalist id="phoneOptions">
+
+                    <option value="1"></option><label>Teléfono 1</label>
+                    <option value="12"></option><label>Teléfono 2</label>
+                    <option value="13"></option><label>Teléfono 3</label>
+
+                </datalist>
+
+                <!-- Barra de progreso -->
+                <progress value="30" max="100">0%</progress>
+                
+                <!-- Medidor -->
+                <meter value="60" min="0" max="100" low="40" high="80" optimum="100">60</meter>
+
+            </fieldset>
+
+            <!-- Botones -->
+            <button type="button">Botón X</button>
+            <button type="submit">Enviar formulario</button>
+            <button type="reset">Resetear formulario</button>
+
+            <!-- Aclaraciones:
+             
+                1) type button: No sirve para nada por sí solo y se utiliza por si necesitamos ejecutar una acción personalizada.
+                2) type submit: Es el valor por defecto y sirve para enviar el formulario.
+                3) type reset: Restaura todos los valores de los distintos elementos del formulario.
+
+            -->
+
+        </form>
+
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="legacyFooter">
+
+
+
+    </footer>    
+
+</body>
+</html>
