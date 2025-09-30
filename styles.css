@@ -137,8 +137,72 @@ p[name*="mi"] {
         4) overflow-x: Lo mismo pero para el eje horizontal X.
         5) overflow-y: Lo mismo pero para el eje vertical Y.
         6) overflow-wrap: Indica si una palabra debería ser dividida en un punto arbitrario cuando no hay suficiente espacio, valores: normal y break-word.
+
+    E) Márgenes y rellenos:
+        1) margin: Declara el margen de un elemento, es decir, el espacio al rededor de la caja, valores: superior, derecho, izquierdo e inferior.
+        2) padding: Declara el relleno de un elemento, es decir, el espacio entre el contenido del elemento y los límites de la caja, valores de igual manera que el margin.
+    
+    F) Fondo:
+        1) background-color: Asigna un color de fondo a un elemento.
+        2) background-image: Asigna una o varias imágenes de fondo a un elemento a través de la función url().
+        3) background-position: Declara la posición de comienzo de una imagen de fondo, valores en px o: center, left, right, top y bottom.
+        4) background-size: Declara el tamaño de la imagen de fondo, valores en %, px o: cover y contain.
+        5) background-repeat: Esta propiedad determina cómo se distribuye la imagen de fondo, valores: repeat, repeat-x, repeat-y y no-repeat.
+        6) background-origin: Determina si la imagen de fondo se posicionará considerando el borde, el relleno o el contenido del área del elemento, valores: border-box, padding-box y content-box.
+        7) background-clip: Declara el área a cubrir por el fondo, valores: border-box, padding-box y content-box.
+        8) background-attachment: Determina si la imagen es estática o se desplaza con el resto de los elementos, valores: scroll (default) y fixed.
+        9) background: Nos permite declarar todas las propiedades del fondo al mismo tiempo.
+    
+    G) Bordes: Estas propiedades se utilizan para:
+
+        +) Borde interno: 
+
+            1) border-width: Define el ancho del borde, valores: superior, derecho, izquierdo e inferior.
+            2) border-style: Define el estilo del borde, valores: superior, derecho, izquierdo e inferior. Los valores disponibles son: hidden, dotted, dashed, solid, double, groove, ridge, inset y outset. Podemos ser más específicos y poner border-top-style, border-right-style, border-left-style y border-bottom-style. Explicación de cada uno:
+                A) hidden: Oculta el borde.
+                B) dotted: El borde se hace con puntos.
+                C) dashed: El borde se hace con guiones cortos.
+                D) solid: El borde se hace sólido y continuo (línea recta)
+                E) double: El borde se hace con dos líneas paralelas.
+                F) groove: Da un efecto de 3D "tallado hacia dentro".
+                G) ridge: Opuesto a groove, da un efecto de 3D hacia fuera.
+                H) inset: Hace que el borde parezca que está hundido dentro de la página.
+                I) outset: Opuesto a inset, parece que está eleveado hacia fuera.
+            3) border-color: Define el color del borde.
+            4) border: Esta propiedad nos permite definir todo en una sola línea.
+            5) border-radius: Define el radio del círculo virtual que el navegador utilizará para dibujar las esquinas redondeadas de la caja.
+
+        -) Borde externo:
+            1) outline-width: Define el ancho del borde, valores en px, %, em, rem, etc. Acepta también valores como thin, medium y thick.
+            2) outline-style: Define el estilo del borde, valores: none, auto, dotted, dashed, groove, ridge, inset y outset.
+            3) outline-color: Define el color del borde.
+            4) outline-offset: Define el desplazamiento, es decir, a que distancia de la caja se dibujará el borde, valores: px, %, em, rem, etc.
+            5) outline: Podemos definir todo en una sola línea.
+
+        %) Bordes avanzados:
+            1) border-imagen-source: Determina la imagen que se utilizará para crear el borde, a través de la función url().
+            2) border-image-width: Determina el ancho de la imagen que se utilizará como border, valores: px, in, pt, mm, cm, em, rem y %.
+            3) border-image-repeat: Determina cómo se utiliza la imagen para definir el borde, valores: repeat, round, stretch y space.
+            4) border-image-slice: Declara cómo se cortará la imagen para las esquinas de los bordes, valores: 4 (1 para cada esquina) o 1 solo (aplica para las 4 esquinas)
+            5) border-image-outset: Define el desplazamiento del borde en relación a la caja, valores: px, in, pt, mm, cm, em, rem y %.
+            6) border-image: Permite definir todos los estilos en una sola línea.
+
+    H) Sombras: 
+        1) 
+
+    
+        
 */  
 
 .textSection {
     text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    vertical-align: auto;
 }
+
+
+
