@@ -235,8 +235,20 @@ p[name*="mi"] {
             4) perspective: Determina la profundidad del efecto, valores: px, in, pt, etc. Encontramos distintas variantes de esta:
                 A) perspective-origin: Cambia las coordenadas X e Y del espectador, valores: px, center, left, rigth, top y bottom. Valores por defecto: 50% 50%.
                 B) backface-visibility: Determine si el reverso del elemento será visible o no, valores: visible (default) o hidden.
-        
-        
+    
+    L) Transiciones: Con la seudoclase :hover podemos realizar transformaciones dinámicas
+        1) transition-property: Especifica las propiedades que participan en la transición, valores: nombres de las propiedades o all (todos/as).
+        2) transition-duration: Especifica la duración de la transición en segundos.
+        3) transition-timing-function: Determina la función que se usa para calcular los valores para la transición, valores:
+            A) ease: Empieza rápidamente al principio y termina suavemente al final.
+            B) ease-in: Empieza lento y luego acelera.
+            C) ease-out: Empieza rápido y se desacelera al final.
+            D) ease-in-out: Empieza lento, acelera, termina lento.
+            E) linear: Velocidad constante de principio a fin.
+            F) step-start: Ocurre de golpe al principio de la transición.
+            G) step-end: Ocurre de golpe al final de la transición.
+        4) transition-delay: Esta propiedad especifica el tiempo que el navegador esperará antes de iniciar la animación.
+        5) transition: Nos permite declarar todos los valores de la transición al mismo tiempo.
 
     
         
@@ -254,6 +266,16 @@ p[name*="mi"] {
 
 .textSection {
     filter: blur(2px);
+}
+
+.textSection {
+
+    /* Gradiente lineal */
+    background: linear-gradient(to top, #ffcc11, #123456);
+
+    /* Gradiente radial */
+    background: radial-gradient(ellipse farthest-corner at right, #cc1111, #ccffcc);
+
 }
 
 

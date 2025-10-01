@@ -1,0 +1,108 @@
+#colores > .caja {
+
+    /* Color de fondo */
+    background-color: #ff11cc;
+
+    /* Color del contenido <p> */
+    color: rgb(150, 150, 150);
+    color: #123456;
+    color: hsl(11, 27%, 49%);
+
+    /* Imagen de fondo */
+    background-image: url("images/forum.png");
+
+}
+
+#bordes {
+
+    /* Estilo al borde */
+    border-style: none; 
+    border-style: hidden;
+    border-style: dotted;
+    border-style: dashed;
+    border-style: solid;
+    border-style: outset;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: double;
+
+    /* Esquinas redondeadas */
+    border-radius: 20px;
+
+    /* Sombra */
+    box-shadow: 10px 10px 10px rgba(38, 199, 51, 0.2);
+
+}
+
+#fuentes {
+
+    /* Tipo de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* Tamaño de fuente */
+    font-size: 20px;
+
+    /* Grosor de fuente */
+    font-weight: 700;
+
+    /* Espaciado entre letras */
+    letter-spacing: 15px;
+
+    /* Alineación de texto */
+    text-align: center;
+
+    /* Sombra de texto */
+    text-shadow: 5px 3px 5px #123456;
+
+}
+
+#transformaciones > .transformable:hover {
+
+    /* Escalar la caja */
+    transform: scale(2, 1);
+    
+    /* Rotar la caja */
+    transform: rotate(5deg);
+
+    /* Inclinar la caja */
+    transform: skew(25deg);
+
+}
+
+#gradientes > .gradiente {
+
+    /* Fondo lineal gradiente + altura */
+    background: linear-gradient(to bottom, #123456, #ff11cc);
+    height: 40px;
+
+    /* Fondo radial gradiente */
+    background: radial-gradient(ellipse farthest-side at left, #ff11cc, #123456);
+
+}
+
+#espaciado > .espaciosa {
+
+    /* Relleno */
+    padding: 20px;
+
+    /* Márgen */
+    margin: 40px 0px 0px 40px;
+
+}
+
+#filtros img:hover {
+
+    /* Scala de grises */
+    filter: grayscale(0.5);
+
+    /* Difuminado */
+    filter: blur(5px);
+
+    /* Contraste */
+    filter: contrast(10%);
+
+    /* Brillo */
+    filter: brightness(20%);
+
+}
