@@ -210,7 +210,16 @@ p[name*="mi"] {
             D) extensión: Indica la forma que va a adquirir el gradiente, valores: closest-side, closest-corner, farthest-side y farthest-corner.
     
     J) Filtros:
-        
+        1) blur: Esta función produce un efecto de difuminado, sintaxis: blur(valor), valores: de 1px a 10px.
+        2) grayscale: Esta función convierte los colores de la imagen en una escala de grises. Acepta números decimales entre 0.1 y 1.
+        3) drop-shadow: Esta función genera una sombra. Los atributos x e y determinan la distancia entre la sombra y la imagen, el atributo tamaño especifica el tamaño de la sombra, y el atributo color declara su color.
+        3) sepia(valor): Esta función le otorga un tono sepia (ocre) a los colores de la imagen. Acepta números decimales entre 0.1 y 1.
+        4) brightness(valor): Esta función cambia el brillo de la imagen. Acepta números decimales entre 0.1 y 10.
+        5) contrast(valor): Esta función cambia el contraste de la imagen. Acepta números decimales entre 0.1 y 10.
+        6) hue-rotate(valor): Esta función aplica una rotación a los matices de la imagen. Acepta un valor en grados desde 1deg a 360deg.
+        7) invert(valor): Esta función invierte los colores de la imagen y produce un negativo. Acepta números decimales entre 0.1 y 1.
+        8) saturate(valor): Esta función satura los colores de la imagen. Acepta números decimales entre 0.1 y 10.
+        9) opacity(valor): Esta función cambia la opacidad de la imagen. Acepta números decimales entre 0 y 1 (0 es totalmente transparente y 1 totalmente opaco).
 
         
     
@@ -225,6 +234,10 @@ p[name*="mi"] {
     word-spacing: normal;
     line-height: normal;
     vertical-align: auto;
+}
+
+.textSection {
+    filter: blur(2px);
 }
 
 
