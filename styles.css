@@ -190,6 +190,7 @@ p[name*="mi"] {
     H) Sombras: 
         1) box-shadow: Genera una sombra desde la caja del elemento y acepta 6 valores: horizontal, vertical, radio de difumminador, valor de propagación, color y el valor inset si queremos que la sombra se propague hacia dentro de la caja.
         2) text-shadow: Genera sombra desde un texto y acepta hasta 4 valores: horizontal, vertical, radio de difuminado y color.
+
     I) Gradientes:
 
         ACLARACIÓN: Los gradientes deben utilizarse con una propiedad de cada navegador, que se pone antes del "linear-gradient", ejemplos:
@@ -199,10 +200,18 @@ p[name*="mi"] {
         D) -ms-: Para Internet Explorer.
 
         1) linear-gradient: Consta de 3 parametros::after
-            A) posición: Indica desde donde comienza: top, bottom, lefth o rigth.
+            A) posición: Indica desde donde comienza: top, bottom, left o rigth.
             B) ángulo: Define la dirección y se puede declarar en unidades: deg (grados), grad (gradianes), rad (radianes)  turn (espiras).
             C) colores: Podemos utilizar valores HEX y/o la propiedad transparent.
-        2) radial-gradient: Similar a linear-gradient pero incluyen un parámetro más que determina la forma del gradiente, valores: circle o elipse.
+        2) radial-gradient: Similar a linear-gradient con los siguientes parámetros::after
+            A) posición: Indica desde donde comienza: top, bototm, left o rigth.
+            B) forma: Indica la forma del gradiente, valores: circle o ellipse.
+            C) color: indica el color del gradiente, valores: hex, rgb, hsl, rgba, etc.
+            D) extensión: Indica la forma que va a adquirir el gradiente, valores: closest-side, closest-corner, farthest-side y farthest-corner.
+    
+    J) Filtros:
+        
+
         
     
         
