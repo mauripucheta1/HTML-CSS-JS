@@ -221,7 +221,23 @@ p[name*="mi"] {
         8) saturate(valor): Esta función satura los colores de la imagen. Acepta números decimales entre 0.1 y 10.
         9) opacity(valor): Esta función cambia la opacidad de la imagen. Acepta números decimales entre 0 y 1 (0 es totalmente transparente y 1 totalmente opaco).
 
+    K) Transformaciones:
+
+        +) Modelos 2D:
+            1) scale: Modifica la escala del elemento, valores: X e Y. Aunque, podemos declararlos independientemente aplicando scaleX y scaleY.
+            2) rotate: Rota el elemento, valores: ángulo, expresado en grados (deg), grad (gradianes), etc.
+            3) skew: Inclina el elemento, valores: ángulo, expresado en grados (deg), grad (gradianes), etc.
+            4) translate: Desplaza el elemento, valores: X e Y.
+        -) Modelos 3D:
+            1) scale3d: Modifica la escala del elemento con un efecto 3D, valores: X, Y y Z.
+            2) rotate3d: Rota el elemento pero en 3D, valores: X, Y, Z y ángulo. Ejemplos: transform: rotate-3d(10px 10px 10px 35deg);
+            3) translate3d: Desplaza el elemento, valores: X, Y y Z.
+            4) perspective: Determina la profundidad del efecto, valores: px, in, pt, etc. Encontramos distintas variantes de esta:
+                A) perspective-origin: Cambia las coordenadas X e Y del espectador, valores: px, center, left, rigth, top y bottom. Valores por defecto: 50% 50%.
+                B) backface-visibility: Determine si el reverso del elemento será visible o no, valores: visible (default) o hidden.
         
+        
+
     
         
 */  
