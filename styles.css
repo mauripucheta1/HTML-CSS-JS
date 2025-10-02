@@ -289,9 +289,7 @@ p[name*="mi"] {
             }
 
         }
-
-    
-        
+ 
 */  
 
 .textSection {
@@ -318,5 +316,85 @@ p[name*="mi"] {
 
 }
 
+.btn:hover {
+    background-color: #123456;
+    color: white;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    transition: linear;
+    transition-duration: 300ms;
+    transform: translate(10px, 10px);
+}
 
+.animacion1 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid;
+    margin-left: 20px;
+    animation-name: girar;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
 
+.animacion2 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid;
+    margin-left: 20px;
+    margin-top: 80px;
+    animation-name: bounced;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-out;
+}
+
+.animacion3 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 20px solid;
+    margin-left: 20px;
+    margin-top: 80px;
+    animation: 2s spinner infinite linear;
+    border-radius: 100%;
+    border-left-color: #123456;
+    border-left-style: solid;
+    border-left-width: 20px;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounced {
+    from {
+        transform: translate(0, 0);
+    } to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
